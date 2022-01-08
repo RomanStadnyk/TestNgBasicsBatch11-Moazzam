@@ -27,7 +27,7 @@ public class HardAssertion {
     @Test
     public void validationOfTitle(){
         String actualTitle = driver.getTitle();
-        String expectedTitle = "Human Manaaaaaaaaaagement System";
+        String expectedTitle = "Human Management System";
         Assert.assertEquals(actualTitle, expectedTitle);
 
         WebElement username = driver.findElement(By.id("txtUsername"));

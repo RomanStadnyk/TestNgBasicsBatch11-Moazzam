@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class EnableAndDisable {
 
-    @Test
+    @Test(groups = "smoke")
     public void firstTest(){
         System.out.println("I am the first");
     }
@@ -14,7 +14,7 @@ public class EnableAndDisable {
         System.out.println("I am the second");
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void thirdTest(){
         System.out.println("I am the third");
     }

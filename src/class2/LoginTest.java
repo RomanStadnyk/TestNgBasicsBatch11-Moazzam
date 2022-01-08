@@ -13,7 +13,7 @@ public class LoginTest {
     WebDriver driver;
 
     //pre condition @before method -- launch browser and navigate url
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void openBrowserAndLaunchApplication(){
         System.setProperty("webdriver.chrome.driver", "src/Driver/chromedriver.exe");
         driver = new ChromeDriver();
@@ -24,14 +24,14 @@ public class LoginTest {
 
     //@Test -- perform login
 
-    @Test(enabled = false)
+    @Test(groups = "regression", enabled = false)
     public void adminLogin(){
         driver.findElement(By.id("txtUsername")).sendKeys("Admin");
         driver.findElement(By.id("txtPassword")).sendKeys("Hum@nhrm123");
         driver.findElement(By.id("btnLogin")).click();
     }
 
-@Test
+@Test(groups = "regression")
 public void validationOfTitle(){
         String actualTitle = driver.getTitle();
         String expectedTitle = "Human Manaaaaaaaaaagement System";
@@ -44,7 +44,7 @@ public void validationOfTitle(){
 }
 
     //post condition @after method -- close browser
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void closeBrowser(){
         driver.quit();
     }
