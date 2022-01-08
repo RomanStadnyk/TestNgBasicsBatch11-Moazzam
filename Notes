@@ -22,7 +22,15 @@ it executes test cases in alphabetical order by default
 Class 2 -
 User story 12345 - Admin user should be able to login with valid credentials
 
+User story 22345 - Verify the title of the application
 
+Priority - by default it is set to 0
+to prioritize the test cases, we use this attribute
+
+enable and disable - to make any test case enabled or disabled temporarily we use  this attribute
+
+
+Assertions:
 
 
 

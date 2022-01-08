@@ -24,13 +24,24 @@ public class LoginTest {
 
     //@Test -- perform login
 
-    @Test
+    @Test(enabled = false)
     public void adminLogin(){
         driver.findElement(By.id("txtUsername")).sendKeys("Admin");
         driver.findElement(By.id("txtPassword")).sendKeys("Hum@nhrm123");
         driver.findElement(By.id("btnLogin")).click();
     }
 
+@Test
+public void validationOfTitle(){
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "Human Manaaaaaaaaaagement System";
+
+        if(expectedTitle.equals(actualTitle)){
+            System.out.println("Test is passed");
+        }else{
+            System.out.println("Test is failed");
+        }
+}
 
     //post condition @after method -- close browser
     @AfterMethod
