@@ -1,0 +1,28 @@
+Recap: Class 1
+
+What is testNG.
+Testng is a tool we use to automate applications.
+
+why do we need it?
+reports
+parallel execution
+annotation based execution
+grouping
+data driven testing
+multiple options for execution
+
+
+@Test annotation - this is the main annotation of testng to execute our TC
+
+it executes test cases in alphabetical order by default
+
+@before method as a precondition that executes before every tc
+@after method as a postcondition that executes after every tc
+
+Class 2 -
+User story 12345 - Admin user should be able to login with valid credentials
+
+
+
+
+
