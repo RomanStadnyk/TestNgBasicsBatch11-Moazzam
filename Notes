@@ -45,6 +45,40 @@ groups - we use different groups to separate the test cases
 
 alwaysrun = true - we use this attribute to execute the pre and post condition from testng.xml file
 
+class 3 -
+
+Recap -
+@before class and @after class -
+it executes before every class and after every class
+
+priority - we use this attribute to prioritize our test cases
+
+enable and disable - to make any test case disabled or enabled, we use this attribute
+
+Assertions: we use assertions for verification and validation
+Hard assertion - the moment it identifies an error, it stops execution
+Soft assertion - it collects all the failures till the end and allows our complete code to execute
+we use assertAll method to get the collective failure from it.
+
+dependson - to mention the name of depending test case in dependent test case, we use this attribute
+
+
+testng.xml file -
+
+to execute all the test cases or some of the test case in a single shot.
+Batch execution is possible due to testng.xml file
+
+package wise
+method wise
+class wise
+group wise
+
+smoke - checking the key functionality of the application- quick testing
+regression - checking the fixed module and other module as well is regression testing
+
+
+
+
 
 
 

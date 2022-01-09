@@ -7,7 +7,7 @@
                 <methods>
                     <include name="thirdTest"/>
                     <include name="secondTest"/>
-                    <exclude name="firstTest"/>
+                    <include name="firstTest"/>
                 </methods>
             </class>
         </classes>

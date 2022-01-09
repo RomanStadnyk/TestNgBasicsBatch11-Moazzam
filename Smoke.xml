@@ -4,8 +4,14 @@
 
     <test verbose="2" preserve-order="true"
           name="C:/Users/sohai/IdeaProjects/batch11/TestNgBasicsBatch11/src/class1/BeforeClassAndAfterClass.java">
-       <packages>
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
            <package name="class1"/>
+            <package name="class2"/>
        </packages>
     </test>
 
