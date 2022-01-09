@@ -10,8 +10,7 @@
             </run>
         </groups>
         <packages>
-            <package name="class1"/>
-            <package name="class2"/>
+            <package name="class3"/>
         </packages>
     </test>
 </suite>

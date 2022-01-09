@@ -8,21 +8,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import utils.CommonMethods;
 
 import java.util.concurrent.TimeUnit;
 
-public class HardAssertion {
+public class HardAssertion extends CommonMethods {
 
-    WebDriver driver;
 
-    @BeforeMethod
-    public void openBrowserAndLaunchApplication(){
-        System.setProperty("webdriver.chrome.driver", "src/Driver/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/login");
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-    }
 
     @Test
     public void validationOfTitle(){
@@ -43,11 +35,6 @@ public class HardAssertion {
  */
     }
 
-    //post condition @after method -- close browser
-    @AfterMethod
-    public void closeBrowser(){
-        driver.quit();
-    }
 
 
 

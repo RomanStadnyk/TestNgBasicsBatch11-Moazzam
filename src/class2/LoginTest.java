@@ -5,22 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
+import utils.CommonMethods;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginTest {
+public class LoginTest extends CommonMethods{
 
-    WebDriver driver;
-
-    //pre condition @before method -- launch browser and navigate url
-    @BeforeMethod(alwaysRun = true)
-    public void openBrowserAndLaunchApplication(){
-        System.setProperty("webdriver.chrome.driver", "src/Driver/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/login");
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-    }
 
     //@Test -- perform login
 
@@ -43,10 +33,5 @@ public void validationOfTitle(){
         }
 }
 
-    //post condition @after method -- close browser
-    @AfterMethod(alwaysRun = true)
-    public void closeBrowser(){
-        driver.quit();
-    }
 
 }
