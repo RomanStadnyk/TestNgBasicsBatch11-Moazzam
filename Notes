@@ -78,6 +78,9 @@ regression - checking the fixed module and other module as well is regression te
 
 
 
+Data provider - it returns 2D array which we use to perform data driven testing
+
+listener - listen all the events and provide us the details of execution according to the instructions provided
 
 
 

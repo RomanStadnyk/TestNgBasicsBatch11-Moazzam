@@ -2,15 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
 
+    <listeners>
+        <listener class-name="class3.ListenersClass"/>
+    </listeners>
+
     <test verbose="2" preserve-order="true" name="Regression">
         <groups>
             <run>
-                <include name="test"/>
+                <include name="regression"/>
             </run>
         </groups>
         <classes>
-        <class name="class3.EmailReport"/>
+        <class name="class2.SoftAssertion"/>
         </classes>
     </test>
+
+
 
 </suite>
